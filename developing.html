@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Сайт находится в разработке - CSC Group</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/grid.css">
+	<link rel="stylesheet" href="./fonts/fonts.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/developing.css">
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// конечная дата
+			const deadline = new Date(2022, 9, 19);
+			// id таймера
+			let timerId = null;
+			// склонение числительных
+			function declensionNum(num, words) {
+				return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
+			}
+			// вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
+			function countdownTimer() {
+				const diff = deadline - new Date();
+				if (diff <= 0) {
+					clearInterval(timerId);
+				}
+				const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
+				const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
+				const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
+				const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
+				$days.textContent = days < 10 ? '0' + days : days;
+				$hours.textContent = hours < 10 ? '0' + hours : hours;
+				$minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
+				$seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
+				$days.dataset.title = declensionNum(days, ['день', 'дня', 'дней']);
+				$hours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
+				$minutes.dataset.title = declensionNum(minutes, ['минута', 'минуты', 'минут']);
+				$seconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
+			}
+			// получаем элементы, содержащие компоненты даты
+			const $days = document.querySelector('.timer__days');
+			const $hours = document.querySelector('.timer__hours');
+			const $minutes = document.querySelector('.timer__minutes');
+			const $seconds = document.querySelector('.timer__seconds');
+			// вызываем функцию countdownTimer
+			countdownTimer();
+			// вызываем функцию countdownTimer каждую секунду
+			timerId = setInterval(countdownTimer, 1000);
+		});
+	</script>
+</head>
+
+<body>
+	<header class="wow animate__animated animate__fadeIn">
+		<div class="container">
+			<div class="header-row">
+				<a href="/" class="logo">
+					<img src="./img/logo.png" alt="">
+				</a>
+				<div class="right-links">
+					<div class="links">
+						<a href="#" class="phone-link">
+							+7 (812) 429-70-10
+						</a>
+						<div class="question">
+							Задать вопрос
+							<ul>
+								<li><a href="#"><i class="icon-whatsapp"></i></a></li>
+								<li><a href="#"><i class="icon-telegram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-toggle toggle-btn">
+						<img src="./img/icons/toggle-menu.svg" alt="">
+					</div>
+					<div class="menu-offcanvas">
+						<div class="toggle-btn close-btn">
+							<img src="./img/icons/close-btn.svg" alt="">
+						</div>
+						<ul>
+							<li><a href="#">о нас</a></li>
+							<li><a href="#">проекты</a></li>
+							<li class="sub-menu">
+								<a href="#" class="sub-menu__link-first">решения</a>
+								<ul>
+									<li><a href="#">Тканевые потолки</a></li>
+									<li><a href="#">ПВХ потолки</a></li>
+									<li class="sub-menu">
+										<a href="#" class="sub-menu__link-two">Освещение</a>
+										<ul>
+											<li><a href="#">Трековые системы</a></li>
+											<li><a href="#">Световые линии</a></li>
+											<li><a href="#">Световые окна</a></li>
+											<li><a href="#">Черные ниши</a></li>
+											<li><a href="#">Парящий профиль <br> Интерьерная подсветка</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Карнизные ниши для штор</a></li>
+									<li><a href="#">Щелевой диффузор</a></li>
+									<li><a href="#">Ревизионные люки</a></li>
+								</ul>
+							</li>
+							<li class="sub-menu">
+								<a href="#" class="sub-menu__link-first">дизайнерам</a>
+								<ul>
+									<li><a href="#">Схема работы</a></li>
+									<li><a href="#">Нетворкинг</a></li>
+								</ul>
+							</li>
+							<li><a href="#">контакты</a></li>
+							<li><a href="#">блог </a></li>
+							<a href="#" class="showroom-btn">
+								<span>шоурум</span>
+							</a>
+							<a href="#" class="arrow-btn">
+								Потолочные<br> решения
+								<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M16 6.23364C16.2973 5.93633 16.2973 5.4543 16 5.15699L11.1551 0.312086C10.8578 0.0147781 10.3758 0.0147781 10.0785 0.312086C9.78118 0.609393 9.78118 1.09142 10.0785 1.38873L14.3851 5.69531L10.0785 10.0019C9.78118 10.2992 9.78118 10.7812 10.0785 11.0785C10.3758 11.3758 10.8578 11.3758 11.1551 11.0785L16 6.23364ZM0.15625 6.45662H15.4617V4.93401H0.15625V6.45662Z"
+										fill="white" />
+								</svg>
+							</a>
+							<a href="#" class="arrow-btn">
+								Обучение<br> дизайнеров
+								<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M16 6.23364C16.2973 5.93633 16.2973 5.4543 16 5.15699L11.1551 0.312086C10.8578 0.0147781 10.3758 0.0147781 10.0785 0.312086C9.78118 0.609393 9.78118 1.09142 10.0785 1.38873L14.3851 5.69531L10.0785 10.0019C9.78118 10.2992 9.78118 10.7812 10.0785 11.0785C10.3758 11.3758 10.8578 11.3758 11.1551 11.0785L16 6.23364ZM0.15625 6.45662H15.4617V4.93401H0.15625V6.45662Z"
+										fill="white" />
+								</svg>
+							</a>
+						</ul>
+						<div class="link-bottom-overlay">
+							<div class="links">
+								<a href="#" class="phone-link">
+									+7 (812) 429-70-10
+								</a>
+								<div class="question">
+									Задать вопрос
+									<ul>
+										<li><a href="#"><i class="icon-whatsapp"></i></a></li>
+										<li><a href="#"><i class="icon-telegram"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<a href="shourum.html" class="btn btn-border btn-yellow">
+								<span><i class="icon-play-circle"></i> Шоурум</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<main>
+		<section class="developing-block">
+			<div class="container">
+
+				<h1>Сайт находится в разработке</h1>
+
+				<div class="text-open">До открытия сайта осталось:</div>
+
+				<div class="timer">
+					<div class="timer__items">
+						<div class="timer__item timer__days">00</div>
+						<div class="timer__item timer__hours">00</div>
+						<div class="timer__item timer__minutes">00</div>
+						<div class="timer__item timer__seconds">00</div>
+					</div>
+				</div>
+
+				<form action="">
+					<div class="row-inputs">
+						<input type="text" placeholder="Ваш телефон *">
+						<input type="text" placeholder="Эл. почта *">
+					</div>
+
+					<button class="btn btn-yellow">
+						Скачать каталог решений <i class="icon-up-right"></i>
+					</button>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="left-contacts">
+				<p><strong>ШОУ-РУМ в Санкт-Петербурге</strong><br> ул. Уральская д. 13,<br> Дизайн-пространство «Аквариус»
+					2й этаж</p>
+				<a href="#" class="btn btn-border btn-border-white">
+					Как к нам пройти <i class="icon-up-right"></i>
+				</a>
+			</div>
+			<ul class="soc-links-footer">
+				<li><a href="#"><i class="icon-telegram"></i> Telegram</a></li>
+				<li><a href="#"><i class="icon-whatsapp"></i> WhatsApp</a></li>
+				<li><a href="#"><i class="icon-youtube"></i> YouTube</a></li>
+			</ul>
+
+		</div>
+	</footer>
+</body>
+
+</html>

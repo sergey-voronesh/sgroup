@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSC Group - Центр потолочных решений</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/main2.css">
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+	<header class="wow animate__animated animate__fadeIn">
+		<div class="container">
+			<div class="header-row">
+				<a href="/" class="logo">
+					<img src="./img/logo.png" alt="">
+				</a>
+				<div class="right-links">
+					<div class="links">
+						<a href="#" class="phone-link">
+							+7 (812) 429-70-10
+						</a>
+						<div class="question">
+							Задать вопрос
+							<ul>
+								<li><a href="#"><i class="icon-whatsapp"></i></a></li>
+								<li><a href="#"><i class="icon-telegram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-toggle toggle-btn">
+						<img src="./img/icons/toggle-menu.svg" alt="">
+					</div>
+					<div class="menu-offcanvas">
+						<div class="toggle-btn close-btn">
+							<img src="./img/icons/close-btn.svg" alt="">
+						</div>
+						<ul>
+							<li><a href="#">о нас</a></li>
+							<li><a href="#">проекты</a></li>
+							<li class="sub-menu">
+								<a href="#" class="sub-menu__link-first">решения</a>
+								<ul>
+									<li><a href="#">Тканевые потолки</a></li>
+									<li><a href="#">ПВХ потолки</a></li>
+									<li class="sub-menu">
+										<a href="#" class="sub-menu__link-two">Освещение</a>
+										<ul>
+											<li><a href="#">Трековые системы</a></li>
+											<li><a href="#">Световые линии</a></li>
+											<li><a href="#">Световые окна</a></li>
+											<li><a href="#">Черные ниши</a></li>
+											<li><a href="#">Парящий профиль <br> Интерьерная подсветка</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Карнизные ниши для штор</a></li>
+									<li><a href="#">Щелевой диффузор</a></li>
+									<li><a href="#">Ревизионные люки</a></li>
+								</ul>
+							</li>
+							<li class="sub-menu">
+								<a href="#" class="sub-menu__link-first">дизайнерам</a>
+								<ul>
+									<li><a href="#">Схема работы</a></li>
+									<li><a href="#">Нетворкинг</a></li>
+								</ul>
+							</li>
+							<li><a href="#">контакты</a></li>
+							<li><a href="#">блог </a></li>
+							<a href="#" class="showroom-btn">
+								<span>шоурум</span>
+							</a>
+							<a href="#" class="arrow-btn">
+								Потолочные<br> решения
+								<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M16 6.23364C16.2973 5.93633 16.2973 5.4543 16 5.15699L11.1551 0.312086C10.8578 0.0147781 10.3758 0.0147781 10.0785 0.312086C9.78118 0.609393 9.78118 1.09142 10.0785 1.38873L14.3851 5.69531L10.0785 10.0019C9.78118 10.2992 9.78118 10.7812 10.0785 11.0785C10.3758 11.3758 10.8578 11.3758 11.1551 11.0785L16 6.23364ZM0.15625 6.45662H15.4617V4.93401H0.15625V6.45662Z"
+										fill="white" />
+								</svg>
+							</a>
+							<a href="#" class="arrow-btn">
+								Обучение<br> дизайнеров
+								<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M16 6.23364C16.2973 5.93633 16.2973 5.4543 16 5.15699L11.1551 0.312086C10.8578 0.0147781 10.3758 0.0147781 10.0785 0.312086C9.78118 0.609393 9.78118 1.09142 10.0785 1.38873L14.3851 5.69531L10.0785 10.0019C9.78118 10.2992 9.78118 10.7812 10.0785 11.0785C10.3758 11.3758 10.8578 11.3758 11.1551 11.0785L16 6.23364ZM0.15625 6.45662H15.4617V4.93401H0.15625V6.45662Z"
+										fill="white" />
+								</svg>
+							</a>
+						</ul>
+						<div class="link-bottom-overlay">
+							<div class="links">
+								<a href="#" class="phone-link">
+									+7 (812) 429-70-10
+								</a>
+								<div class="question">
+									Задать вопрос
+									<ul>
+										<li><a href="#"><i class="icon-whatsapp"></i></a></li>
+										<li><a href="#"><i class="icon-telegram"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<a href="shourum.html" class="btn btn-border btn-yellow">
+								<span><i class="icon-play-circle"></i> Шоурум</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<main class="main-overlay-footer">
+		<div class="lines-block lines-block-full">
+			<div class="container">
+				<div class="lines-wrapper">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+
+		<section class="teaser-page wow animate__animated animate__fadeIn">
+			<div class="container">
+				<div class="left-block">
+					<div class="left-two">
+						<h1 class="h1">
+							Световые линии
+						</h1>
+					</div>
+				</div>
+			</div>
+			<div class="pattern-teaser-page">
+				<div class="container">
+					<div class="pattern"></div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="page-content wow animate__animated animate__fadeIn">
+			<div class="container">
+				<div class="left-block">
+					<div class="breadcrumps">
+						<a href="/">Главная</a> > <a href="/">Решения</a> > <a href="/">Освещение</a> > Световые линии
+					</div>
+					<div class="track__wrapper">
+						<div class="left-two track">
+							<div class="track__item">
+								<div class="title-blockh2">
+									<h2>
+										световая линия SLOTT LINE
+									</h2>
+								</div>
+								<p>
+									Новая световая линия SLOTT Line представляет собой встроенную систему освещения, рассчитанную
+									на  установку светодиодной ленты в один или два ряда (это зависит от необходимой мощности).
+								</p>
+								<p>
+									<strong>Главная особенность данного решения — демпферная система крепления, которая
+										обеспечивает
+										бесщелевое примыкание</strong>, подходит как для ПВХ, так и для ткани. Дополнительными
+									элементами
+									решения являются торцевые заглушки и система стыковки в четырех точках (для углового
+									и прямого соединения).
+								</p>
+								<div class="video-block">
+									<div class="video-block__video">
+										<img src="./img/light-lines/video-cover.jpg" alt="">
+									</div>
+									<div class="video-block__describe">
+										<span>
+											SLOTT LINE
+										</span> - световая линия
+									</div>
+								</div>
+								<p>
+									Важной составляющей в конструкции SLOTT Line является жесткий поликарбонатный рассеиватель,
+									который утоплен на 3 мм в профиль. Данное решение позволяет сделать видимую часть конструкции
+									более объемной, интересной, а также спрятать стыки в углах поликарбонатного рассеивателя.
+									Небольшая высота профиля не повлечет за собой потери в высоте при установке натяжного
+									потолка.
+								</p>
+								<p>
+									Профиль выполнен в двух цветах: черный и белый, чтобы разнообразить цветовую гамму видимой
+									части. Рассеиватель выполнен в белом цвете. Световые линии SLOTT Line предусмотрены для
+									установки в качестве основного источника света, поэтому важно расположить их так, чтобы свет
+									распространялся равномерно на всю площадь помещения. <strong>В этом вам могут помочь наши
+										сотрудники — произвести светотехнический расчёт и подобрать ленту необходимой
+										яркости.</strong> Данные
+									системы лаконично вписываются в современные минималистичные интерьеры.
+								</p>
+							</div>
+							<div class="track__item">
+								<div class="title-blockh2">
+									<h2>
+										световая линия SLOTT Canyon
+									</h2>
+								</div>
+								<div class="drawing">
+									<img src="./img/light-lines/photo1.jpg" alt="SLOTT Canyon">
+								</div>
+								<div class="drawing drawing__light_1">
+									<img src="./img/light-lines/scheme1.png" alt="SLOTT Canyon">
+								</div>
+								<div class="track__inner-wrapper">
+									<div class="track__inner-left">
+										<div class="track__description track__description_5">
+											<div class="track__description-image">
+												<img src="./img/light-lines/left-image1.png" alt="">
+											</div>
+											световая линия SLOTT CANYON, белый
+										</div>
+										<div class="track__description track__description_5">
+											<div class="track__description-image">
+												<img src="./img/light-lines/left-image2.png" alt="">
+											</div>
+											световая линия SLOTT CANYON, черный
+										</div>
+									</div>
+									<div class="track__inner-right">
+										<p>
+											<strong>SLOTT Canyon</strong> — световая линия с возможностью регулировки светового
+											потока за счет
+											глубины посадки рассеивателя. Рассеиватель световой линии выполнен из жесткого матового
+											поликарбоната. Сам профиль снабжен парными пазами для установки рассеивателя в двух
+											различных положениях, что дает вариативность освещения. Более глубокая посадка
+											рассеивателя помогает сделать сам источник света невидимым под определенным углом
+											обзора.
+										</p>
+										<p>
+											Видимая часть световой линии выполнена шириной 23 мм, что позволяет сочетать
+											ее с трек-системой SLOTT for Technolight и щелевым диффузором SLOTT 5+, создавая единые
+											стилистические решения.
+										</p>
+										<p>
+											Профиль выпускается в двух цветовых решениях: черном и белом. <strong>Демпферная
+												система
+												фиксации полотна позволяет монтировать профиль как с ПВХ, так и с тканевыми
+												потолками.</strong>
+										</p>
+									</div>
+								</div>
+								<div class="video-block">
+									<div class="video-block__video">
+										<img src="./img/light-lines/video-cover2.jpg" alt="">
+									</div>
+									<div class="video-block__describe nomargin">
+										<span>
+											SLOTT CANYON
+										</span> - световая линия
+									</div>
+								</div>
+							</div>
+							<div class="track__item">
+								<div class="title-blockh2">
+									<h2>
+										НИШЕВАЯ СВЕТОВАЯ ЛИНИЯ SLOTT
+									</h2>
+								</div>
+								<p>
+									Данная система представляет собой открытый тип световой линии без рассеивателя! Светодиодная
+									лента устанавливается скрытым способом в специальные места, а световой поток отражаясь
+									от белых стенок попадает в пространство помещения. Отражённый свет не слепит и является самым
+									комфортным для глаз человека! Световые линии вполне могут является основным источником
+									освещения благодаря своим техническим характеристикам.
+								</p>
+								<p>
+									<strong>
+										Благодаря своей конструкции и отсутствию поликарбонатного экрана данное решение имеет
+										объёмный и наиболее эстетичный вид в выключенном состоянии.
+									</strong>
+								</p>
+								<div class="drawing drawing__light_2">
+									<img src="./img/light-lines/photo2.jpg" alt="SLOTT">
+								</div>
+								<div class="track__content-wrapper track__content-wrapper_1">
+									<div class="track__content-left">
+										Так же в профиль могут быть установлены линейные светильники. <strong>Подходящие для
+											использования
+											с этой системой светильники L31/L61 НЕ являются трек-системой.</strong> Они крепятся
+										статично,
+										согласно предварительному проекту и расчёту освещённости по нему. Поставляются в пустом
+										корпусе, подразумевая подбор источников света (светодиодная лента) согласно требованиям
+										к освещенности, цветовой температуре и другим параметрам.
+									</div>
+									<div class="track__content-right">
+										<img src="./img/light-lines/scheme2.png" alt="">
+									</div>
+								</div>
+								<div class="track__items">
+									<div class="track__items-column">
+										<img src="./img/light-lines/item1.png" alt="">
+									</div>
+									<div class="track__items-column">
+										<img src="./img/light-lines/item2.png" alt="">
+									</div>
+									<div class="track__items-column">
+										<img src="./img/light-lines/item3.png" alt="">
+									</div>
+								</div>
+								<p>
+									Система допустима к монтажу как в открытом виде, так и с рассеивателем в виде полупрозрачного
+									полотна. Выпускается в трёх цветовых решениях: чёрно-белый и белый вариант под продольную
+									засветку, а также чёрный вариант для установки дополнительных светильников.
+								</p>
+								<p>
+									<strong>Черный профиль категорически не применим с использованием светодиодной
+										ленты.</strong>
+								</p>
+								<div class="video-block">
+									<div class="video-block__video">
+										<img src="./img/light-lines/video-cover3.jpg" alt="">
+									</div>
+									<div class="video-block__describe">
+										<span>SLOTT CLASSIC</span> - нишевая световая линия
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="track__right">
+							<div class="track__description track__description_4">
+								<div class="track__description-image">
+									<img src="./img/light-lines/right-image1.png" alt="">
+								</div>
+								световая линия SLOTT LINE, черный
+							</div>
+							<div class="track__description track__description_4">
+								<div class="track__description-image">
+									<img src="./img/light-lines/right-image2.png" alt="">
+								</div>
+								световая линия SLOTT LINE, белый
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-dark form-dark form-dark-2 form-dark-2_light wow animate__animated animate__fadeIn">
+			<div class="container">
+				<div class="form-wrapper">
+					<div class="title-block">
+						остались вопросы?
+					</div>
+					<p>
+						Оставьте заявку и мы вам перезвоним!
+					</p>
+					<form action="">
+						<div class="form-dark-2__inputs">
+							<label for="">
+								<input type="text" placeholder="Ваше имя *">
+							</label>
+							<label for="">
+								<input type="text" placeholder="Ваш телефон *">
+							</label>
+						</div>
+						<button class="btn btn-brown">
+							Оставить заявку <i class="icon-up-right"></i>
+						</button>
+						<div class="form-dark-2__text">
+							Свяжитесь с нами через популярные мессенджеры <br>
+							<strong>Telegram</strong> или <strong>WhatsApp</strong>, мы на связи <br>
+							с пн-пт: <strong>с 11:00 до 19:00</strong>, сб: <strong>с 12:00 до 16:00</strong>, вс:
+							<strong>выходной</strong>
+						</div>
+						<div class="form-dark-2__socials">
+							<a href="#" class="form-dark-2__social form-dark-2__social_tg">
+								Telegram
+							</a>
+							<a href="#" class="form-dark-2__social form-dark-2__social_wa">
+								WhatsApp
+							</a>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="page-content wow animate__animated animate__fadeIn">
+			<div class="container">
+				<div class="left-block">
+					<div class="track__wrapper">
+						<div class="left-two track">
+							<div class="track__item track__item_nomargin">
+								<div class="title-blockh2">
+									<h2>
+										НИШЕВАЯ СВЕТОВАЯ ЛИНИЯ SLOTT 35
+									</h2>
+								</div>
+								<p>
+									<strong>
+										Новинка KRAAB SYSTEMS — нишевые световые линии шириной 35 мм. Видимая ширина линии
+										в 35 мм разработана на основе пожеланий практикующих дизайнеров и современных тенденций
+										на рынке освещения.
+									</strong>
+								</p>
+								<p>
+									Чёрный SLOTT 35 — конструкционный профиль, используется в качестве чёрной ниши для монтажа
+									точечных светильников, спотов или карнизов.
+								</p>
+								<p>
+									Белый и чёрно-белый варианты используются в качестве основного источника света
+									и предназначены для встраивания продольной светодиодной ленты, при этом свет, отражающийся
+									от белых стенок ниши — рассеянный и мягкий. Контрастный чёрно-белый SLOTT гармонично
+									сочетается с чёткими линиями теневых и уровневых потолков. В профили данных цветов также
+									возможно встраивание дополнительного оборудования.
+								</p>
+								<p>
+									<strong>
+										Благодаря сменному элементу крепления данный профиль можно встраивать как в Натяжной
+										потолок так и в ГКЛ.
+									</strong>
+								</p>
+								<div class="video-block">
+									<div class="video-block__video">
+										<img src="./img/light-lines/video-cover4.jpg" alt="">
+									</div>
+									<div class="video-block__describe">
+										<span>SLOTT 35</span> - нишевая световая линия
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="track__right">
+							<div class="track__description track__description_6">
+								<div class="track__description-image">
+									<img src="./img/light-lines/right-image3.png" alt="">
+								</div>
+							</div>
+							<div class="track__description track__description_6">
+								<div class="track__description-image">
+									<img src="./img/light-lines/right-image4.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section
+			class="question-form-block question-form-block-change solutions-form-bottom wow animate__animated animate__fadeIn">
+			<div class="question-form-block-change__decore">
+				<img src="./img/light-lines/bottom2.png" alt="">
+			</div>
+			<div class="question-form-block-change__decore-left">
+				<img src="./img/light-lines/bottom1.png" alt="">
+			</div>
+			<div class="form-solutions-absolute">
+				<div class="container">
+					<div class="left-block">
+						<div class="left-two">
+							<div class="form-wrapper">
+								<div class="form-right">
+									<div class="title-block-default">
+										<span>Всегда на вашей стороне</span> <br> в поисках решений для <br>вашего интерьера
+									</div>
+									<form action="">
+										<label for="">
+											<input type="text" placeholder="Ваше имя *">
+										</label>
+										<label for="">
+											<input type="text" placeholder="Ваш телефон *">
+										</label>
+										<label for="">
+											<input type="text" placeholder="Электронная почта *">
+										</label>
+										<button class="btn btn-block">
+											скачать каталог решений 2022 <i class="icon-arrow-circle-down"></i>
+										</button>
+									</form>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+	</main>
+	<footer>
+		<div class="container">
+			<div class="footer-row">
+				<div class="logo wow animate__animated animate__fadeIn">
+					<img src="./img/logo.png" alt="">
+				</div>
+
+
+				<div class="links-footer">
+					<div class="nav-footer-wrapper wow animate__animated animate__fadeIn">
+						<ul class="nav-footer">
+							<li><a href="#">о нас</a></li>
+							<li><a href="#">проекты</a></li>
+							<li><a href="#">решения</a></li>
+							<li><a href="#">дизайнерам</a></li>
+							<li><a href="#">контакты</a></li>
+							<li><a href="#">блог</a></li>
+						</ul>
+					</div>
+					<div class="contacts-info-footer-wrapper wow animate__animated animate__fadeIn">
+						<div class="contacts-info-footer">
+							<ul class="link-contacts">
+								<li>Телефон: <a href="#">+7 (812) 429-70-10</a></li>
+								<li>Эл. адрес: <a href="#">info@cscgroup-spb.ru</a></li>
+							</ul>
+							<p><strong>ШОУ-РУМ в Санкт-Петербурге</strong> <br>ул. Уральская д. 13, Дизайн-пространство
+								«Аквариус» 2й этаж</p>
+							<p>
+								Время работы: <br>
+								Пн-Пт: <strong>с 11:00 до 19:00</strong><br>
+								Суббота: <strong>с 12:00 до 16:00</strong><br>
+								Воскресенье: <strong>выходной</strong>
+							</p>
+
+							<ul class="soc-links-footer wow animate__animated animate__fadeIn">
+								<li><a href="#"><i class="icon-telegram"></i> Telegram</a></li>
+								<li><a href="#"><i class="icon-whatsapp"></i> WhatsApp</a></li>
+								<li><a href="#"><i class="icon-youtube"></i> YouTube</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="sub-catalog-navs wow animate__animated animate__fadeIn">
+					<ul class="link-white">
+						<li><a href="#">Потолочные решения</a></li>
+						<li><a href="#">Обучение дизайнеров</a></li>
+					</ul>
+					<div class="catalog-download">
+						Официальные представители <strong>KRAAB SYSTEMS</strong>
+						<a href="#" class="link">
+							Скачать каталог
+						</a>
+					</div>
+
+					<a href="shourum.html" class="btn btn-border btn-yellow">
+						<span><i class="icon-play-circle"></i> Шоурум</span>
+					</a>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="copyright wow animate__animated animate__fadeIn">
+			<div class="container">
+				© 2022 «CSC GROUP» - Тканевые, парящие и бесщелевые натяжные потолки KRAAB | Все права защищены.
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>

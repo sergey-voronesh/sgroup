@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeueLight.eot');
+    src: url('BebasNeueLight.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeueLight.woff') format('woff'),
+        url('BebasNeueLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeueBold.eot');
+    src: url('BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeueBold.woff') format('woff'),
+        url('BebasNeueBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeueBook.eot');
+    src: url('BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeueBook.woff') format('woff'),
+        url('BebasNeueBook.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Light.woff2') format('woff2'),
+        url('Raleway-Light.woff') format('woff'),
+        url('Raleway-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Regular.woff2') format('woff2'),
+        url('Raleway-Regular.woff') format('woff'),
+        url('Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Medium.woff2') format('woff2'),
+        url('Raleway-Medium.woff') format('woff'),
+        url('Raleway-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-SemiBold.woff2') format('woff2'),
+        url('Raleway-SemiBold.woff') format('woff'),
+        url('Raleway-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Bold.woff2') format('woff2'),
+        url('Raleway-Bold.woff') format('woff'),
+        url('Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'csc';
+    src:  url('csc-group.eot?iad700');
+    src:  url('csc-group.eot?iad700#iefix') format('embedded-opentype'),
+      url('csc-group.ttf?iad700') format('truetype'),
+      url('csc-group.woff?iad700') format('woff'),
+      url('csc-group.svg?iad700#csc-group') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    font-family: 'csc' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+.icon-whatsapp:before {
+  content: "\e905";
+}
+.icon-telegram:before {
+  content: "\e908";
+}
+.icon-arrow-circle-down:before {
+  content: "\e906";
+}
+.icon-files:before {
+  content: "\e907";
+}
+.icon-file-pdf:before {
+  content: "\e904";
+}
+.icon-play-circle:before {
+  content: "\e909";
+}
+.icon-arrow-down:before {
+  content: "\e900";
+}
+.icon-arrow-right:before {
+  content: "\e901";
+}
+.icon-arrow-up-left:before {
+  content: "\e902";
+}
+.icon-up-left:before {
+  content: "\e902";
+}
+.icon-arrow-top-left:before {
+  content: "\e902";
+}
+.icon-arrow-up-right:before {
+  content: "\e903";
+}
+.icon-up-right:before {
+  content: "\e903";
+}
+.icon-arrow-top-right:before {
+  content: "\e903";
+}
+.icon-play:before {
+  content: "\f04b";
+}
+.icon-youtube:before {
+  content: "\f16a";
+}
+.icon-vk:before {
+  content: "\f189";
+}
+.icon-telegram-2:before {
+  content: "\f1d8";
+}
+.icon-whatsapp-2:before {
+  content: "\f232";
+}
